@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open excel</title>
+</head>
+<body>
+<form class="" action="table" method="post">
+    <h1>Select a sheet</h1>
+    <p><input type="search" list="character" name="search_list">
+        <datalist id="character">
+        {% for opt in option %}
+            <option value="{{ opt }}"></option>
+        {% endfor %}
+        </datalist>
+    </p>
+    <input type="submit" name="" value="Submit">
+</form>
+</body>
+</html>
